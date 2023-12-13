@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+    <h3>Timestamp</h3>
+    <p>The data is taken from a 13-year range from 2008 to 2021, the last year where data was recorded from OECD.</p>
+
+        
+    
+    <h3>Data source</h3>
+    <p>The source used was data from Organisation for Economic Cooperation and Development (OECD). It contained data about imports and exports trade values of multiple countries, on top of various sectors of choice.</p>
+        <p><a href="https://stats.oecd.org/#", target="_blank">Link to the dataset</a> , Globalisation -> Trade by Enterprise Characteristics -> ISIC rev4 -> TEC by partner zones and countries.</p>
+
+
+    <h3>
+        <a href="http://127.0.0.1:5500/viz_metadata_map.html", target="_blank">Metadata</a></h3>
+    
+    <h3>Actions Performed</h3>
+    <ol> 
+    <li>Export the dataset as a CSV file.</li>   
+    <li>Load it in a data frame using pandas (Python library).</li>
+    <li>Selected only the rows that were associated with the TOTAL sector, since we weren’t interested in any specific sector of those provided.</li>
+    <li>Dropped not useful columns.</li>
+    <li>Dropped not useful columns.</li>
+    <li>Created two different data frames, one for each trading direction (imports/exports) and saved on respective CSV files.</li>
+    <li>Loaded it on Flourish as data of a ‘Connections Globe’.</li>
+    <li>Matched the graph parameter to the columns we used two filters: the first one as a drop-down menu that allows one to decide which connection flow to project; the second being the years, thus enabling the animation.</li>
+    <li>Made small changes and corrections to make the visualization more appealing and suited to our project. These included modifications on the size and color of the arrows, the initial zoom-in and rotation, and size of the graph.</li>
+
+    </ol>
+</body>
+</html>
