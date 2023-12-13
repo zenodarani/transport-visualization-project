@@ -1,0 +1,84 @@
+function highlight(){
+
+    const flows = dv1.contentDocument.documentElement.getElementById("flows").querySelectorAll("g")
+
+    flows.forEach(function(el){
+
+        el.addEventListener("mouseenter", function(){
+            flows.forEach(function(a){
+                a.style.opacity = 0.3
+            })
+            this.style.opacity = 1
+        })
+
+        el.addEventListener("mouseleave", function(){
+            flows.forEach(function(a){
+                a.style.opacity = 1
+            })
+        })
+    })
+}
+
+
+// =====
+
+
+function mySwitch(){
+    const button = document.getElementById("switch")  
+    const contentA = document.getElementById("contentA")
+    const contentB = document.getElementById("contentB")
+
+    let content = "A"
+
+    button.addEventListener("click", function(){
+        console.log("A")
+
+        if (content == "A"){
+            contentB.style.display = "block"
+            contentA.style.display = "none"
+            content = "B"
+
+            button.textContent = "show A"
+        }
+        else {
+            contentA.style.display = "block"
+            contentB.style.display = "none"
+            content = "A"
+
+            button.textContent = "show B"
+        }
+    })
+
+}
+
+
+// =====
+
+
+function droppdown(){
+    const select = document.getElementById("select")
+    const figures = document.querySelectorAll(".figure")
+
+    select.addEventListener("change", function(){
+        let content = select.value
+
+        figures.forEach(function(a){
+            a.style.display = "none"
+        })
+
+        let elem = document.getElementById("content" + content)
+        elem.style.display = "block"
+    })
+}
+
+
+// =====
+
+
+// const div = document.createElement("div");
+            // let content = document.createTextNode("test");
+
+            // div.id = "sidebar"
+
+            // div.appendChild(content);
+            // document.getElementById("map02").append(div);

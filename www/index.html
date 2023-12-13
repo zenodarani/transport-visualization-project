@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Gloabl Trade | Data visualization course</title>
+	<meta name="description" content="Data Visualization Project about globalization in trading">
+	<meta name="author" content="Zeno Darani, Cristian Brugnara, Andrea Martinelli">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- allow webpage to be run in full-screen mode -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- set nav bar color -->
+	<meta name="theme-color" content="black"> <!-- Chrome, Firefox OS and Opera -->
+	<meta name="msapplication-navbutton-color" content="black"> <!-- Windows Phone -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- iOS Safari -->
+	<link type="text/css" rel="stylesheet" href="assets/style/style.css">
+
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+	<!-- leaflet.js -->
+	<link rel="stylesheet" type="text/css" href="assets/lib/leaflet_1_7_1.css">
+	<script src="assets/lib/leaflet_1_7_1.js"></script>
+
+	<!-- Stylesheet for fonts-->
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+
+<body>
+	<div id="topbar">
+		<nav>
+			<div class="go_home">
+				<a href="../" title="Go back home">
+					<span>
+						←
+					</span>
+					<span>
+						Data visualization course
+					</span>
+				</a>
+			</div>
+		</nav>
+	</div>
+	<main>
+		<header>
+			<h1 style="font-size: 36pt;">
+				Global Trade
+				<!-- <i class="bi bi-balloon"></i> -->
+			</h1>
+			<h2>An interconnected world</h2>
+			<h3>by Bruganra Cristian, Darani Zeno, Martinelli Andrea</h3>
+		</header>
+		<a name="globe"></a>
+		<section class="no_margin">
+			<a name="highlight"></a>
+			<div style="background-color: #091729;">
+				<div class="flourish-embed flourish-globe" data-src="visualisation/16005326"
+					style="width: 60%; margin-right: 20%; margin-left: 20%;">
+					<script src="https://public.flourish.studio/resources/embed.js"></script>
+				</div>
+			</div>
+			<div class="download">
+				<div>
+					<a href="assets/dataviz/dataset+metadata.zip" title="Download dataset">
+						↓ Dataset
+					</a>
+				</div>
+				<div>
+					<a href="assets/dataviz/visualization-protocol.txt" title="Download visualization protocol">
+						↓ Visualization protocol
+					</a>
+				</div>
+			</div>
+		</section>
+		<article>
+			<h4>Index</h4>
+			<section id="abstract">
+				<ul>
+					<li><a href="#globe">Global Trading</a></li>
+					<li><a href="#abstract">Abstract</a></li>
+					<li><a href="#race">Trade Value</a></li>
+					<li><a href="#treemap">National Energy Production</a></li>
+				</ul>
+			</section>
+		</article>
+		<article>
+			<a name="abstract"></a>
+			<h4>
+				Abstract
+			</h4>
+			<p>
+				Donec fringilla dignissim dolor, a volutpat leo porta eget. Sed ultrices suscipit est non semper. Sed at
+				rutrum risus, eget imperdiet erat. Nulla blandit tincidunt nisl, sed euismod ligula consectetur ut.
+				Suspendisse ornare eu lacus eget tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+				Phasellus ac consectetur purus. Aenean tortor massa, rutrum sed aliquet at, cursus a massa. Nam interdum
+				ut velit at porta. Proin ullamcorper turpis in nulla finibus, a auctor felis congue. Curabitur eu
+				blandit diam. Morbi et mi tellus. Donec rhoncus odio quis placerat auctor. Sed metus arcu, tincidunt
+				euismod tristique eget, lacinia nec neque.
+			</p>
+		</article>
+		<article>
+			<section class="no_margin">
+				<a name="race"></a>
+				<h4>
+					Trade Value
+				</h4>
+				<p>
+					Donec fringilla dignissim dolor, a volutpat leo porta eget. Sed ultrices suscipit est non semper.
+					Sed at rutrum risus, eget imperdiet erat. Nulla blandit tincidunt nisl, sed euismod ligula
+					consectetur ut. Suspendisse ornare eu lacus eget tempus. Interdum et malesuada fames ac ante ipsum
+					primis in faucibus. Phasellus ac consectetur purus. Aenean tortor massa, rutrum sed aliquet at,
+					cursus a massa. Nam interdum ut velit at porta. Proin ullamcorper turpis in nulla finibus, a auctor
+					felis congue. Curabitur eu blandit diam. Morbi et mi tellus. Donec rhoncus odio quis placerat
+					auctor. Sed metus arcu, tincidunt euismod tristique eget, lacinia nec neque.
+				</p>
+			</section>
+		</article>
+		<section class="no_margin">
+			<div style="background-color: #F3F2F2; padding-top: 25px; padding-bottom: 10px;">
+				<div style="display: flex; width: 90%; padding-left: 8%;">
+					<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/16031388"
+						style="width: 50%;" style="float: left; width: 50%;">
+						<script src="https://public.flourish.studio/resources/embed.js"></script>
+					</div>
+					<div style="width: 2%; background-color: #F3F2F2;"></div>
+					<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/16038872"
+						style="width: 50%;" style="float: left; width: 50%;">
+						<script src="https://public.flourish.studio/resources/embed.js"></script>
+					</div>
+				</div>
+				<figcaption style="padding-left: 8%;">Energy production share per nation</figcaption>
+			</div>
+			<article>
+				<div class="download">
+					<div>
+						<a href="assets/dataviz/dataset+metadata.zip" title="Download dataset">
+							↓ Dataset
+						</a>
+					</div>
+					<div>
+						<a href="assets/dataviz/visualization-protocol.txt" title="Download visualization protocol">
+							↓ Visualization protocol
+						</a>
+					</div>
+				</div>
+		</section>
+		</article>
+		<article>
+			<section class="no_margin">
+				<a name="treemap"></a>
+				<h4>
+					National Energy Production
+				</h4>
+				<p>
+					Donec fringilla dignissim dolor, a volutpat leo porta eget. Sed ultrices suscipit est non semper.
+					Sed at rutrum risus, eget imperdiet erat. Nulla blandit tincidunt nisl, sed euismod ligula
+					consectetur ut. Suspendisse ornare eu lacus eget tempus. Interdum et malesuada fames ac ante ipsum
+					primis in faucibus. Phasellus ac consectetur purus. Aenean tortor massa, rutrum sed aliquet at,
+					cursus a massa. Nam interdum ut velit at porta. Proin ullamcorper turpis in nulla finibus, a auctor
+					felis congue. Curabitur eu blandit diam. Morbi et mi tellus. Donec rhoncus odio quis placerat
+					auctor. Sed metus arcu, tincidunt euismod tristique eget, lacinia nec neque.
+				</p>
+				<div class="flourish-embed flourish-hierarchy" data-src="visualisation/16002766">
+					<script src="https://public.flourish.studio/resources/embed.js"></script>
+				</div>
+				<figcaption>Energy production share per nation</figcaption>
+				<div class="download">
+					<div>
+						<a href="assets/dataviz/dataset+metadata.zip" title="Download dataset">
+							↓ Dataset
+						</a>
+					</div>
+					<div>
+						<a href="assets/dataviz/visualization-protocol.txt" title="Download visualization protocol">
+							↓ Visualization protocol
+						</a>
+					</div>
+				</div>
+			</section>
+		</article>
+		<footer>
+			<section>
+				<div>
+					<strong>Global Trade</strong><br />
+					An interconnected world<br /><br />
+					Brugnara Cristian<br />
+					Darani Zeno<br />
+					Martinelli Andrea
+				</div>
+				<div>
+					<strong>SUPSI</strong><br />
+					Bachelor in Data Science and Artificial Intelligence<br />
+					Data visualization course<br /><br />
+					Teacher: Giovanni Profeta<br />
+					Academic year: 2023-2024
+				</div>
+			</section>
+		</footer>
+	</main>
+
+	<script src="assets/script/script.js"></script>
+	<script src="assets/script/map_01.js"></script>
+	<script src="assets/script/map_02.js"></script>
+	<script src="assets/script/map_03.js"></script>
+	<script src="assets/script/map_04.js"></script>
+	<script src="assets/script/map_05.js"></script>
+
+</body>
+
+</html>
